@@ -51,7 +51,8 @@ void list_directory(const char *path, const char *li, const char *ba) {
 		strcat(pad1,"/");
 		strcat(pad1,result);
 		strcat(cmd,pad1);
-		printf("%s\n",cmd);
+//		printf("%s\n",cmd);
+		system (cmd);
 		strcpy(cmd,"mv -v ");
 		strcpy(pad2,path);
 		strcat(pad2,"/");
