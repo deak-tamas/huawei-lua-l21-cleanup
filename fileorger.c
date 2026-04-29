@@ -60,7 +60,7 @@ void list_directory(const char *path, const char *li, const char *ba) {
 		strcat(cmd,pad2);
 		strcat(cmd," ");
 		strcat(cmd,pad1);
-		printf("%s\n",cmd);
+//		printf("%s\n",cmd);
 		system(cmd);
 
 	}	
