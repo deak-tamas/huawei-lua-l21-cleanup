@@ -57,10 +57,10 @@ void list_directory(const char *path, const char *li, const char *ba) {
 		strcpy(pad2,path);
 		strcat(pad2,"/");
 		strcat(pad2,entry->d_name);
-		strcat(cmd,pad1);
-		strcat(cmd," ");
 		strcat(cmd,pad2);
-//		printf("%s\n",cmd);
+		strcat(cmd," ");
+		strcat(cmd,pad1);
+		printf("%s\n",cmd);
 		system(cmd);
 
 	}	
