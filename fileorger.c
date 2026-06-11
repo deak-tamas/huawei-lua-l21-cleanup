@@ -46,9 +46,9 @@ void list_directory(const char *path, const char *li, const char *ba) {
 //            printf("  %s\n", entry->d_name);
         copy_until_underscore(result,entry->d_name);
         if (strlen(result)>2) {
-                strcpy(cmd,"mkdir ");
+                strcpy(cmd,"mkdir -p ");
 		strcpy(pad1,li);
-		strcat(pad1,"/");
+		strcat(pad1,"/2archive/");
 		strcat(pad1,result);
 		strcat(cmd,pad1);
 //		printf("%s\n",cmd);
